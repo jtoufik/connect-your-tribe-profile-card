@@ -1,55 +1,26 @@
 <%- include('./partials/head') %>
 
-<title>FDND Visitekaartje</title>
+<title>Mohamed Jalal Toufik - Visitekaartje - FDND</title>
 <link rel="stylesheet" href="/public/style.css">
 <link href="https://fonts.googleapis.com/css2?family=Cairo" rel="stylesheet">
 </head>
 
 <body>
-<main>
-
-  <h1> <%= member.name %> <%= member.surname %> </h1> 
-
-  <div class="background-container">
-    <img src="/assets/maroc.jpeg" alt="" class="header-image" />
-  </div>
-  <div class="profile-container">
-    <img class="profile-image" src="/assets/jalal4.jpg" alt="profile" />
-  </div>
-  
-
-  <article class="wiebenik"> 
-    <h2 class="header-wbi">Wie ben ik?</h2>
-      <p>
-        Mijn naam volledige naam is Mohamed Jalal Toufik, maar mijn roep naam is Jalal. Ben in 1997 geboren in Zaandam en woon nog met mijn familie in Koog aan de Zaan. 
-        Verder ben ik een jonge man die houdt van zijn familie en besteed ook veel tijd met ze door. Daarbij is mijn afkomst 
-        Marokkaans en ben ik ook islamitisch opgevoed. Mijn geloof is een belangrijke kern van mijn identiteit, 
-        aangezien ik er veel mee bezig ben. 
-      </p>
-      <p>
-        Vervolgens is mijn karakter vrij ontspannen, "soms te ontspannen in het leven" zegt: mijn moeder wel eens. :p
-        Moet er bij toevoegen dat ik met de dag leef, aangezien morgen nooit beloofd is en ik merk als je zo in het leven
-        staat dat je het aller beste er uit haalt!
-      </p>
-  </article>
-
-  <article class="ambities">
-    <h2 class="header-amb">Mijn ambities</h2>
-      <p>
-        Naast mijn ambities betreft mijn godsdienst, ben ik ook ambiteus om uit eindelijk een profesionele "Front-End Developer" te worden.
-        Ik heb sinds kleins af aan al een ambitie om te bouwen, het begon allemaal toen ik speelde als 6 jarige met "Lego blokjes", 
-        sinds toen wist ik dat ik later wilden gaan ontwerpen. Met de tijd is mijn focus gericht op het bouwen van websites, 
-        waarin ik zeker me zelf in terug kan vinden.
-      </p>
-      <p>
-        Vervolgens heb ik ook een ander ambitie op een hele andere tak, aangezien ik sinds kort ook heb leren knippen (voornamelijk een opscheer voor mannen).
-        Ik vind het tof om uit mijn comfort-zone te stappen en een nieuwe skill uit te masteren. Mijn doel was om skillful genoeg te zijn om mij zelf te kunnen 
-        knippen en die doel heb ik met succes behaald en kan nu met trots zeggen dat ik kapper onafhankelijk ben. :p
-      </p>
-  </article>
-
-</main> 
-
+  <main>
+    <section>
+      <article>
+        <h1> <%= member.name %> <%= member.surname %> </h1> 
+        <h2> Student Frontend Developer</h2>
+      </article>
+      <article>
+        <img src="<%= member.avatar %>" alt="profile-jalal">
+        <div>
+          <h2> About me</h2>
+          <h2> Contact</h2>
+        </div>
+      </article>
+    </section>
+  </main> 
 </body>
 </html>
 
